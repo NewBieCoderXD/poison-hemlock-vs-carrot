@@ -1,0 +1,12 @@
+[project]
+name = "poison-hemlock-vs-carrot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "keras==2.15.0",
+    "matplotlib>=3.10.9",
+    "pydot>=4.0.1",
+    "tensorflow[and-cuda]>=2.15.1",
+]

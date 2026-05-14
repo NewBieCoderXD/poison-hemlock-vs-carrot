@@ -1,0 +1,233 @@
+
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-05-03 15:10:14.590085: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2026-05-03 15:10:15.183391: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:901] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2026-05-03 15:10:15.221938: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:901] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2026-05-03 15:10:15.222111: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:901] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2026-05-03 15:10:15.222719: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:901] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2026-05-03 15:10:15.222863: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:901] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2026-05-03 15:10:15.222994: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:901] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2026-05-03 15:10:15.284315: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:901] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2026-05-03 15:10:15.284522: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:901] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2026-05-03 15:10:15.284679: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:901] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2026-05-03 15:10:15.284802: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1929] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 4424 MB memory:  -> device: 0, name: NVIDIA GeForce GTX 1060 6GB, pci bus id: 0000:01:00.0, compute capability: 6.1
+Starting training on GPU...
+Epoch 1/50
+2026-05-03 15:10:20.454755: I external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:454] Loaded cuDNN version 8904
+2026-05-03 15:10:22.023843: W external/local_tsl/tsl/framework/bfc_allocator.cc:296] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.55GiB with freed_by_count=0. The caller indicates that this is not a failure, but this may mean that there could be performance gains if more memory were available.
+2026-05-03 15:10:22.245433: W external/local_tsl/tsl/framework/bfc_allocator.cc:296] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.55GiB with freed_by_count=0. The caller indicates that this is not a failure, but this may mean that there could be performance gains if more memory were available.
+2026-05-03 15:10:22.835977: W external/local_tsl/tsl/framework/bfc_allocator.cc:296] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.34GiB with freed_by_count=0. The caller indicates that this is not a failure, but this may mean that there could be performance gains if more memory were available.
+2026-05-03 15:10:23.011343: W external/local_tsl/tsl/framework/bfc_allocator.cc:296] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.34GiB with freed_by_count=0. The caller indicates that this is not a failure, but this may mean that there could be performance gains if more memory were available.
+2026-05-03 15:10:24.217834: I external/local_xla/xla/service/service.cc:168] XLA service 0x7abc5c35b9a0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2026-05-03 15:10:24.217867: I external/local_xla/xla/service/service.cc:176]   StreamExecutor device (0): NVIDIA GeForce GTX 1060 6GB, Compute Capability 6.1
+2026-05-03 15:10:24.223209: I tensorflow/compiler/mlir/tensorflow/utils/dump_mlir_util.cc:269] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1777795824.313550  180652 device_compiler.h:186] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+2026-05-03 15:10:25.616961: W external/local_tsl/tsl/framework/bfc_allocator.cc:296] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.20GiB with freed_by_count=0. The caller indicates that this is not a failure, but this may mean that there could be performance gains if more memory were available.
+2026-05-03 15:10:25.736355: W external/local_tsl/tsl/framework/bfc_allocator.cc:296] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.20GiB with freed_by_count=0. The caller indicates that this is not a failure, but this may mean that there could be performance gains if more memory were available.
+2026-05-03 15:10:28.191495: W external/local_tsl/tsl/framework/bfc_allocator.cc:296] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.30GiB with freed_by_count=0. The caller indicates that this is not a failure, but this may mean that there could be performance gains if more memory were available.
+2026-05-03 15:10:28.384960: W external/local_tsl/tsl/framework/bfc_allocator.cc:296] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.30GiB with freed_by_count=0. The caller indicates that this is not a failure, but this may mean that there could be performance gains if more memory were available.
+ 60/515 [==>...........................] - ETA: 2:51 - loss: 0.5971 - accuracy: 0.69692026-05-03 15:10:53.684176: W external/local_tsl/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 79561440 exceeds 10% of free system memory.
+515/515 [==============================] - ETA: 0s - loss: 0.5422 - accuracy: 0.7316  
+Epoch 1: val_accuracy improved from -inf to 0.76232, saving model to best_model.keras
+515/515 [==============================] - 234s 430ms/step - loss: 0.5422 - accuracy: 0.7316 - val_loss: 0.4911 - val_accuracy: 0.7623
+Epoch 2/50
+215/515 [===========>..................] - ETA: 1:51 - loss: 0.4531 - accuracy: 0.79592026-05-03 15:15:32.649323: W external/local_tsl/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 79561440 exceeds 10% of free system memory.
+515/515 [==============================] - ETA: 0s - loss: 0.4405 - accuracy: 0.80012026-05-03 15:17:39.656279: W external/local_tsl/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 79561440 exceeds 10% of free system memory.
+
+Epoch 2: val_accuracy improved from 0.76232 to 0.81622, saving model to best_model.keras
+515/515 [==============================] - 222s 430ms/step - loss: 0.4405 - accuracy: 0.8001 - val_loss: 0.4148 - val_accuracy: 0.8162
+Epoch 3/50
+321/515 [=================>............] - ETA: 1:13 - loss: 0.3922 - accuracy: 0.82672026-05-03 15:19:56.145473: W external/local_tsl/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 79561440 exceeds 10% of free system memory.
+515/515 [==============================] - ETA: 0s - loss: 0.3901 - accuracy: 0.8277  
+Epoch 3: val_accuracy did not improve from 0.81622
+515/515 [==============================] - 223s 431ms/step - loss: 0.3901 - accuracy: 0.8277 - val_loss: 0.6018 - val_accuracy: 0.7613
+Epoch 4/50
+422/515 [=======================>......] - ETA: 33s - loss: 0.3557 - accuracy: 0.84902026-05-03 15:24:48.666365: W external/local_tsl/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 79561440 exceeds 10% of free system memory.
+515/515 [==============================] - ETA: 0s - loss: 0.3556 - accuracy: 0.8495 
+Epoch 4: val_accuracy did not improve from 0.81622
+515/515 [==============================] - 214s 416ms/step - loss: 0.3556 - accuracy: 0.8495 - val_loss: 0.4901 - val_accuracy: 0.8017
+Epoch 5/50
+515/515 [==============================] - ETA: 0s - loss: 0.3434 - accuracy: 0.8539  
+Epoch 5: val_accuracy did not improve from 0.81622
+515/515 [==============================] - 209s 404ms/step - loss: 0.3434 - accuracy: 0.8539 - val_loss: 0.6003 - val_accuracy: 0.6858
+Epoch 6/50
+515/515 [==============================] - ETA: 0s - loss: 0.3276 - accuracy: 0.8607  
+Epoch 6: val_accuracy did not improve from 0.81622
+515/515 [==============================] - 226s 438ms/step - loss: 0.3276 - accuracy: 0.8607 - val_loss: 0.4942 - val_accuracy: 0.8131
+Epoch 7/50
+515/515 [==============================] - ETA: 0s - loss: 0.3141 - accuracy: 0.8698  
+Epoch 7: val_accuracy did not improve from 0.81622
+515/515 [==============================] - 219s 424ms/step - loss: 0.3141 - accuracy: 0.8698 - val_loss: 0.6272 - val_accuracy: 0.7944
+Epoch 8/50
+515/515 [==============================] - ETA: 0s - loss: 0.3001 - accuracy: 0.8731  
+Epoch 8: val_accuracy improved from 0.81622 to 0.85312, saving model to best_model.keras
+515/515 [==============================] - 213s 412ms/step - loss: 0.3001 - accuracy: 0.8731 - val_loss: 0.3747 - val_accuracy: 0.8531
+Epoch 9/50
+515/515 [==============================] - ETA: 0s - loss: 0.2958 - accuracy: 0.8764  
+Epoch 9: val_accuracy improved from 0.85312 to 0.88978, saving model to best_model.keras
+515/515 [==============================] - 209s 405ms/step - loss: 0.2958 - accuracy: 0.8764 - val_loss: 0.2992 - val_accuracy: 0.8898
+Epoch 10/50
+515/515 [==============================] - ETA: 0s - loss: 0.2863 - accuracy: 0.8796  
+Epoch 10: val_accuracy did not improve from 0.88978
+515/515 [==============================] - 243s 470ms/step - loss: 0.2863 - accuracy: 0.8796 - val_loss: 0.5639 - val_accuracy: 0.7473
+Epoch 11/50
+515/515 [==============================] - ETA: 0s - loss: 0.2762 - accuracy: 0.8878   
+Epoch 11: val_accuracy did not improve from 0.88978
+515/515 [==============================] - 231s 445ms/step - loss: 0.2762 - accuracy: 0.8878 - val_loss: 0.5219 - val_accuracy: 0.8126
+Epoch 12/50
+515/515 [==============================] - ETA: 0s - loss: 0.2697 - accuracy: 0.8908  
+Epoch 12: val_accuracy did not improve from 0.88978
+515/515 [==============================] - 214s 416ms/step - loss: 0.2697 - accuracy: 0.8908 - val_loss: 0.4541 - val_accuracy: 0.8495
+Epoch 13/50
+515/515 [==============================] - ETA: 0s - loss: 0.2688 - accuracy: 0.8913  
+Epoch 13: val_accuracy did not improve from 0.88978
+515/515 [==============================] - 207s 402ms/step - loss: 0.2688 - accuracy: 0.8913 - val_loss: 1.2632 - val_accuracy: 0.6846
+Epoch 14/50
+515/515 [==============================] - ETA: 0s - loss: 0.2578 - accuracy: 0.8945  
+Epoch 14: val_accuracy did not improve from 0.88978
+515/515 [==============================] - 207s 401ms/step - loss: 0.2578 - accuracy: 0.8945 - val_loss: 0.9787 - val_accuracy: 0.7504
+Epoch 15/50
+515/515 [==============================] - ETA: 0s - loss: 0.2534 - accuracy: 0.8953  
+Epoch 15: val_accuracy did not improve from 0.88978
+515/515 [==============================] - 264s 511ms/step - loss: 0.2534 - accuracy: 0.8953 - val_loss: 0.4935 - val_accuracy: 0.8029
+Epoch 16/50
+515/515 [==============================] - ETA: 0s - loss: 0.2490 - accuracy: 0.9008  
+Epoch 16: val_accuracy did not improve from 0.88978
+515/515 [==============================] - 246s 476ms/step - loss: 0.2490 - accuracy: 0.9008 - val_loss: 0.6123 - val_accuracy: 0.7363
+Epoch 17/50
+515/515 [==============================] - ETA: 0s - loss: 0.2396 - accuracy: 0.9041  
+Epoch 17: val_accuracy improved from 0.88978 to 0.90216, saving model to best_model.keras
+515/515 [==============================] - 246s 477ms/step - loss: 0.2396 - accuracy: 0.9041 - val_loss: 0.2527 - val_accuracy: 0.9022
+Epoch 18/50
+515/515 [==============================] - ETA: 0s - loss: 0.2356 - accuracy: 0.9051  
+Epoch 18: val_accuracy did not improve from 0.90216
+515/515 [==============================] - 248s 480ms/step - loss: 0.2356 - accuracy: 0.9051 - val_loss: 0.5670 - val_accuracy: 0.8339
+Epoch 19/50
+515/515 [==============================] - ETA: 0s - loss: 0.2251 - accuracy: 0.9089   
+Epoch 19: val_accuracy did not improve from 0.90216
+515/515 [==============================] - 224s 433ms/step - loss: 0.2251 - accuracy: 0.9089 - val_loss: 1.2513 - val_accuracy: 0.6713
+Epoch 20/50
+515/515 [==============================] - ETA: 0s - loss: 0.2273 - accuracy: 0.9066  
+Epoch 20: val_accuracy did not improve from 0.90216
+515/515 [==============================] - 215s 416ms/step - loss: 0.2273 - accuracy: 0.9066 - val_loss: 0.8207 - val_accuracy: 0.8055
+Epoch 21/50
+515/515 [==============================] - ETA: 0s - loss: 0.2270 - accuracy: 0.9095  
+Epoch 21: val_accuracy did not improve from 0.90216
+515/515 [==============================] - 208s 403ms/step - loss: 0.2270 - accuracy: 0.9095 - val_loss: 0.2574 - val_accuracy: 0.9009
+Epoch 22/50
+515/515 [==============================] - ETA: 0s - loss: 0.2220 - accuracy: 0.9118  
+Epoch 22: val_accuracy did not improve from 0.90216
+515/515 [==============================] - 206s 400ms/step - loss: 0.2220 - accuracy: 0.9118 - val_loss: 0.5821 - val_accuracy: 0.8196
+Epoch 23/50
+515/515 [==============================] - ETA: 0s - loss: 0.2212 - accuracy: 0.9123  
+Epoch 23: val_accuracy did not improve from 0.90216
+515/515 [==============================] - 210s 407ms/step - loss: 0.2212 - accuracy: 0.9123 - val_loss: 0.5014 - val_accuracy: 0.8606
+Epoch 24/50
+515/515 [==============================] - ETA: 0s - loss: 0.2176 - accuracy: 0.9114  
+Epoch 24: val_accuracy did not improve from 0.90216
+515/515 [==============================] - 210s 407ms/step - loss: 0.2176 - accuracy: 0.9114 - val_loss: 0.2986 - val_accuracy: 0.8803
+Epoch 25/50
+515/515 [==============================] - ETA: 0s - loss: 0.2088 - accuracy: 0.9181  
+Epoch 25: val_accuracy did not improve from 0.90216
+515/515 [==============================] - 211s 409ms/step - loss: 0.2088 - accuracy: 0.9181 - val_loss: 0.8911 - val_accuracy: 0.7856
+Epoch 26/50
+515/515 [==============================] - ETA: 0s - loss: 0.2012 - accuracy: 0.9208  
+Epoch 26: val_accuracy improved from 0.90216 to 0.91357, saving model to best_model.keras
+515/515 [==============================] - 208s 402ms/step - loss: 0.2012 - accuracy: 0.9208 - val_loss: 0.2462 - val_accuracy: 0.9136
+Epoch 27/50
+515/515 [==============================] - ETA: 0s - loss: 0.2006 - accuracy: 0.9195  
+Epoch 27: val_accuracy improved from 0.91357 to 0.93712, saving model to best_model.keras
+515/515 [==============================] - 210s 408ms/step - loss: 0.2006 - accuracy: 0.9195 - val_loss: 0.1812 - val_accuracy: 0.9371
+Epoch 28/50
+515/515 [==============================] - ETA: 0s - loss: 0.2050 - accuracy: 0.9174  
+Epoch 28: val_accuracy did not improve from 0.93712
+515/515 [==============================] - 205s 397ms/step - loss: 0.2050 - accuracy: 0.9174 - val_loss: 0.2738 - val_accuracy: 0.8859
+Epoch 29/50
+515/515 [==============================] - ETA: 0s - loss: 0.2000 - accuracy: 0.9223  
+Epoch 29: val_accuracy did not improve from 0.93712
+515/515 [==============================] - 207s 402ms/step - loss: 0.2000 - accuracy: 0.9223 - val_loss: 0.2209 - val_accuracy: 0.9150
+Epoch 30/50
+515/515 [==============================] - ETA: 0s - loss: 0.1970 - accuracy: 0.9227  
+Epoch 30: val_accuracy did not improve from 0.93712
+515/515 [==============================] - 211s 409ms/step - loss: 0.1970 - accuracy: 0.9227 - val_loss: 0.2509 - val_accuracy: 0.9075
+Epoch 31/50
+515/515 [==============================] - ETA: 0s - loss: 0.1933 - accuracy: 0.9260  
+Epoch 31: val_accuracy did not improve from 0.93712
+515/515 [==============================] - 211s 408ms/step - loss: 0.1933 - accuracy: 0.9260 - val_loss: 0.1994 - val_accuracy: 0.9252
+Epoch 32/50
+515/515 [==============================] - ETA: 0s - loss: 0.1905 - accuracy: 0.9249  
+Epoch 32: val_accuracy did not improve from 0.93712
+515/515 [==============================] - 207s 401ms/step - loss: 0.1905 - accuracy: 0.9249 - val_loss: 0.2155 - val_accuracy: 0.9150
+Epoch 33/50
+515/515 [==============================] - ETA: 0s - loss: 0.1925 - accuracy: 0.9249  
+Epoch 33: val_accuracy did not improve from 0.93712
+515/515 [==============================] - 209s 406ms/step - loss: 0.1925 - accuracy: 0.9249 - val_loss: 0.4166 - val_accuracy: 0.8446
+Epoch 34/50
+515/515 [==============================] - ETA: 0s - loss: 0.1869 - accuracy: 0.9271  
+Epoch 34: val_accuracy did not improve from 0.93712
+515/515 [==============================] - 208s 402ms/step - loss: 0.1869 - accuracy: 0.9271 - val_loss: 0.2437 - val_accuracy: 0.9036
+Epoch 35/50
+515/515 [==============================] - ETA: 0s - loss: 0.1836 - accuracy: 0.9279  
+Epoch 35: val_accuracy did not improve from 0.93712
+515/515 [==============================] - 213s 414ms/step - loss: 0.1836 - accuracy: 0.9279 - val_loss: 0.2686 - val_accuracy: 0.9007
+Epoch 36/50
+515/515 [==============================] - ETA: 0s - loss: 0.1812 - accuracy: 0.9297  
+Epoch 36: val_accuracy did not improve from 0.93712
+515/515 [==============================] - 211s 408ms/step - loss: 0.1812 - accuracy: 0.9297 - val_loss: 0.2930 - val_accuracy: 0.8946
+Epoch 37/50
+515/515 [==============================] - ETA: 0s - loss: 0.1815 - accuracy: 0.9277  
+Epoch 37: val_accuracy improved from 0.93712 to 0.94392, saving model to best_model.keras
+515/515 [==============================] - 209s 405ms/step - loss: 0.1815 - accuracy: 0.9277 - val_loss: 0.1483 - val_accuracy: 0.9439
+Epoch 38/50
+515/515 [==============================] - ETA: 0s - loss: 0.1712 - accuracy: 0.9320  
+Epoch 38: val_accuracy did not improve from 0.94392
+515/515 [==============================] - 209s 405ms/step - loss: 0.1712 - accuracy: 0.9320 - val_loss: 0.1618 - val_accuracy: 0.9369
+Epoch 39/50
+515/515 [==============================] - ETA: 0s - loss: 0.1781 - accuracy: 0.9290  
+Epoch 39: val_accuracy did not improve from 0.94392
+515/515 [==============================] - 212s 410ms/step - loss: 0.1781 - accuracy: 0.9290 - val_loss: 0.4697 - val_accuracy: 0.8662
+Epoch 40/50
+515/515 [==============================] - ETA: 0s - loss: 0.1696 - accuracy: 0.9336  
+Epoch 40: val_accuracy did not improve from 0.94392
+515/515 [==============================] - 222s 431ms/step - loss: 0.1696 - accuracy: 0.9336 - val_loss: 0.3892 - val_accuracy: 0.8415
+Epoch 41/50
+515/515 [==============================] - ETA: 0s - loss: 0.1764 - accuracy: 0.9320   
+Epoch 41: val_accuracy did not improve from 0.94392
+515/515 [==============================] - 213s 412ms/step - loss: 0.1764 - accuracy: 0.9320 - val_loss: 0.2212 - val_accuracy: 0.9240
+Epoch 42/50
+515/515 [==============================] - ETA: 0s - loss: 0.1703 - accuracy: 0.9324  
+Epoch 42: val_accuracy did not improve from 0.94392
+515/515 [==============================] - 208s 404ms/step - loss: 0.1703 - accuracy: 0.9324 - val_loss: 0.2508 - val_accuracy: 0.9026
+Epoch 43/50
+515/515 [==============================] - ETA: 0s - loss: 0.1720 - accuracy: 0.9332  
+Epoch 43: val_accuracy improved from 0.94392 to 0.94489, saving model to best_model.keras
+515/515 [==============================] - 209s 405ms/step - loss: 0.1720 - accuracy: 0.9332 - val_loss: 0.1490 - val_accuracy: 0.9449
+Epoch 44/50
+515/515 [==============================] - ETA: 0s - loss: 0.1543 - accuracy: 0.9409  
+Epoch 44: val_accuracy did not improve from 0.94489
+515/515 [==============================] - 211s 408ms/step - loss: 0.1543 - accuracy: 0.9409 - val_loss: 0.4951 - val_accuracy: 0.8759
+Epoch 45/50
+515/515 [==============================] - ETA: 0s - loss: 0.1596 - accuracy: 0.9401  
+Epoch 45: val_accuracy did not improve from 0.94489
+515/515 [==============================] - 208s 402ms/step - loss: 0.1596 - accuracy: 0.9401 - val_loss: 0.2766 - val_accuracy: 0.9043
+Epoch 46/50
+515/515 [==============================] - ETA: 0s - loss: 0.1568 - accuracy: 0.9397  
+Epoch 46: val_accuracy did not improve from 0.94489
+515/515 [==============================] - 212s 411ms/step - loss: 0.1568 - accuracy: 0.9397 - val_loss: 0.4437 - val_accuracy: 0.8369
+Epoch 47/50
+515/515 [==============================] - ETA: 0s - loss: 0.1659 - accuracy: 0.9331  
+Epoch 47: val_accuracy did not improve from 0.94489
+515/515 [==============================] - 215s 417ms/step - loss: 0.1659 - accuracy: 0.9331 - val_loss: 0.5815 - val_accuracy: 0.8480
+Epoch 48/50
+515/515 [==============================] - ETA: 0s - loss: 0.1597 - accuracy: 0.9400  
+Epoch 48: val_accuracy did not improve from 0.94489
+515/515 [==============================] - 211s 408ms/step - loss: 0.1597 - accuracy: 0.9400 - val_loss: 0.2730 - val_accuracy: 0.8997
+Epoch 49/50
+515/515 [==============================] - ETA: 0s - loss: 0.1538 - accuracy: 0.9397  
+Epoch 49: val_accuracy did not improve from 0.94489
+515/515 [==============================] - 225s 436ms/step - loss: 0.1538 - accuracy: 0.9397 - val_loss: 0.2151 - val_accuracy: 0.9182
+Epoch 50/50
+515/515 [==============================] - ETA: 0s - loss: 0.1545 - accuracy: 0.9405  
+Epoch 50: val_accuracy did not improve from 0.94489
+515/515 [==============================] - 213s 412ms/step - loss: 0.1545 - accuracy: 0.9405 - val_loss: 0.1758 - val_accuracy: 0.9427
