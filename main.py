@@ -126,8 +126,14 @@ def make_model(input_shape, num_classes):
 
 model = make_model(input_shape=image_size + (3,), num_classes=2)
 keras.utils.plot_model(model, show_shapes=True)
+lr_schedule = keras.optimizers.schedules.ExponentialDecay(
+    initial_learning_rate=1e-4,
+    decay_steps=2000,
+    decay_rate=0.9
+)
+optimizer = keras.optimizers.SGD(learning_rate=lr_schedule)
 model.compile(
-    optimizer="adam",
+    optimizer=optimizer,
     loss="binary_crossentropy",
     metrics=["accuracy"],
 )
